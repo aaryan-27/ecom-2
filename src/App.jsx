@@ -23,7 +23,7 @@ const ScrollToTop = () => {
 function App() {
   return (
     <CartProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <ScrollToTop />
         <div className="flex flex-col min-h-screen bg-black text-white selection:bg-purple-500/30">
           <Navbar />

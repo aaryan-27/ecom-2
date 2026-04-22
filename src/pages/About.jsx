@@ -8,7 +8,7 @@ const About = () => {
       <section className="relative py-32 mb-20 overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-40">
           <img 
-            src="/assets/images/Artboard26_2_c3ed6588-164f-4e3c-80c9-eccbf1bc3a8c.jpg" 
+            src={import.meta.env.BASE_URL + "assets/images/Artboard26_2_c3ed6588-164f-4e3c-80c9-eccbf1bc3a8c.jpg"} 
             alt="About Hero" 
             className="w-full h-full object-cover object-center grayscale"
           />
@@ -41,8 +41,8 @@ const About = () => {
               </div>
             </div>
             <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-              <img src="/assets/images/Artboard27_2.jpg" alt="Streetwear 1" className="w-full h-full object-cover aspect-square bg-zinc-900" />
-              <img src="/assets/images/Artboard31_44.jpg" alt="Streetwear 2" className="w-full h-full object-cover aspect-square bg-zinc-900 translate-y-8" />
+              <img src={import.meta.env.BASE_URL + "assets/images/Artboard27_2.jpg"} alt="Streetwear 1" className="w-full h-full object-cover aspect-square bg-zinc-900" />
+              <img src={import.meta.env.BASE_URL + "assets/images/Artboard31_44.jpg"} alt="Streetwear 2" className="w-full h-full object-cover aspect-square bg-zinc-900 translate-y-8" />
             </div>
           </div>
         </section>

@@ -14,7 +14,7 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black z-10" />
           <img 
-            src="/assets/images/Artboard14_37.jpg" 
+            src={import.meta.env.BASE_URL + "assets/images/Artboard14_37.jpg"} 
             alt="Hero Background" 
             className="w-full h-full object-cover object-center"
           />
@@ -58,10 +58,10 @@ const Home = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
-            { name: "Anime", image: "/assets/images/Artboard21_56.jpg", span: "lg:col-span-2 lg:row-span-2" },
-            { name: "Music", image: "/assets/images/Artboard15_37.jpg", span: "col-span-1" },
-            { name: "Movies", image: "/assets/images/Artboard19_67.jpg", span: "col-span-1" },
-            { name: "Memes", image: "/assets/images/Artboard20_62.jpg", span: "md:col-span-2" }
+            { name: "Anime", image: import.meta.env.BASE_URL + "assets/images/Artboard21_56.jpg", span: "lg:col-span-2 lg:row-span-2" },
+            { name: "Music", image: import.meta.env.BASE_URL + "assets/images/Artboard15_37.jpg", span: "col-span-1" },
+            { name: "Movies", image: import.meta.env.BASE_URL + "assets/images/Artboard19_67.jpg", span: "col-span-1" },
+            { name: "Memes", image: import.meta.env.BASE_URL + "assets/images/Artboard20_62.jpg", span: "md:col-span-2" }
           ].map((cat, index) => (
             <Link 
               key={index} 
